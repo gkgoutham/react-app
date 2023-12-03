@@ -1,9 +1,8 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
+import data from '../data';
 
-
-
-const CustomDataTable = ({ data }) => {
+export default function PriceApprovalDetails() {
   const columns = [
     { name: 'Name', selector: 'name', sortable: true },
     { name: 'Age', selector: 'age', sortable: true, right: true },
@@ -51,5 +50,3 @@ const CustomDataTable = ({ data }) => {
     />
   );
 };
-
-export default CustomDataTable;
